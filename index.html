@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US>">
+<head>
+  <link href="/CSS/styles.css" rel="stylesheet" type="text/css" media="all">
+  <script src="/JS/scripts.js"></script>
+  <title>MysticPizzza</title>
+</head>
+<header>
+  <h1>Mystic Pizza</h1>
+  <h2>Est 1967 Greenpoint</h2>
+</header>  
+<body>
+  <div class="container">
+  <button id="startOrder"><img src="/IMG/Pizza-Slice.png" alt="pizza slice" width="80px" ></button>  
+  <form id="pizzaOrderForm">
+    <div id="pizzaSize">
+      <h1>Pie Size</h1> 
+      <input type="radio" id="small" name="size" value="small" checked />
+      <label for="Small">Small</label>
+      <input type="radio" id="medium" name="size" value="medium" />
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="large" />
+      <label for="large">Large</label>
+    </div>
+    <div class="pizzaToppings">
+      <h1>Pizza Toppings</h1>
+        <input type="checkbox" name="meat" id="sausage" value="sausage" />
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" name="meat" id="pepperoni" value="pepperoni"/>
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" name="meat" id="chicken" value="chicken" />
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" name="veg" id="onion" value="onion" />
+        <label for="onion">Onion</label>
+        <input type="checkbox" name="veg" id="peppers" value="peppers" />
+        <label for="peppers">Peppers</label>
+        <input type="checkbox" name="veg" id="pineApple" value="pineApple" />
+        <label for="pineApple">Pineapple</label>
+      </div>
+      <div class="diningOption">
+      <h1>Here? or To Go?</h1>
+        <label for="delivery">delivery
+          <input type="checkbox" name="delivery" id="dining" value="3" />
+        </label>
+            <label for="pickup">pick up 
+          <input type="checkbox" name="dineIn" id="dining" value="0" />
+        </label>
+      </div>
+  <div class="tip">
+    <h2>Tip the staff!</h2>
+<input type="dropDown">
+      </div>
+      <input type="submit" id="completePizza"/>
+  </form>
+  <div class="summary" id="hidden">
+  <span id="summary">
+    <p><b>Your Order:</b></p>
+  </span>
+  </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+}
+
+.pizzaSizes {
+background-color: transparent;
+border-color: transparent;
+font-size: 30pt;
+color:orangered;
+
+}
+
+div#hidden {
+  display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+  font-size: 30pt;
+}
+
+.tip {
+  background-color: transparent;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: rgb(94, 155, 123);
+  font-size: 30pt;
+}
+
+button#startOrder {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.diningOption {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+  font-size: 30pt;
+}
+
+.pizzaToppings {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+  font-size: 30pt;
+}
+
+header {
+  font-family: "Sugar Snow";
+  text-align: center;
+font-size: 40pt;
+color: white;
+}
+
+html {
+  background-image:url(/IMG/people1.png);
+  background-size: flex;
+}
+
+input#completePizza {
+background-color: transparent;
+border-color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: white;
+  font-size: 40pt;
+}
