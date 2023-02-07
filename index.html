@@ -22,41 +22,52 @@
       <input type="radio" id="large" name="size" value="large" />
       <label for="large">Large</label>
     </div>
-    <div class="pizzaToppings">
+    <div id="pizzaToppings">
       <h1>Pizza Toppings</h1>
+      <h3>Proteins</h3>
         <input type="checkbox" name="meat" id="sausage" value="sausage" />
         <label for="sausage">Sausage</label>
+        <br />
         <input type="checkbox" name="meat" id="pepperoni" value="pepperoni"/>
         <label for="pepperoni">Pepperoni</label>
+        <br />
         <input type="checkbox" name="meat" id="chicken" value="chicken" />
         <label for="chicken">Chicken</label>
+        <br />
+        <h3>Vegetables</h3>
         <input type="checkbox" name="veg" id="onion" value="onion" />
         <label for="onion">Onion</label>
+        <br />
         <input type="checkbox" name="veg" id="peppers" value="peppers" />
         <label for="peppers">Peppers</label>
+        <br />
         <input type="checkbox" name="veg" id="pineApple" value="pineApple" />
         <label for="pineApple">Pineapple</label>
-      </div>
-      <div class="diningOption">
+    </div>
+    <div id="dining">
       <h1>Here? or To Go?</h1>
-        <label for="delivery">delivery
-          <input type="checkbox" name="delivery" id="dining" value="3" />
-        </label>
-            <label for="pickup">pick up 
-          <input type="checkbox" name="dineIn" id="dining" value="0" />
-        </label>
-      </div>
-  <div class="tip">
-    <h2>Tip the staff!</h2>
-<input type="dropDown">
-      </div>
-      <input type="submit" id="completePizza"/>
+      <input type="radio" name="dining" id="pickUp" value="pickUp" checked />
+      <label for="pickUp">Pick Up</label>
+     <input type="radio" name="dining" id="delivery" value="delivery" />
+     <label for="delivery">Delivery</label>
+    </div>
+    <div id="tip">
+      <h1>Tip the staff:</h1>
+        <input type="range" id="tip" name="tip" min="0" step="5" max="20"  />
+        <label for="tip">Tip</label>
+  </input>
+    </div>
+      <button type="submit" id="completePizza">Place Order</button>
   </form>
-  <div class="summary" id="hidden">
-  <span id="summary">
-    <p><b>Your Order:</b></p>
+
+  <div class="hidden" id="summary">
+  <span name="summary" id="summary">
+    <p><b>Your Order:</b>
+    </p>
+    <button type="click" id="startOver">Start Over</button>
+
   </span>
   </div>
-    </div>
-    </body>
+</div>
+</body>
 </html>
