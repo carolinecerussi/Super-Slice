@@ -7,22 +7,7 @@ function Pizza(size,toppings,dining, tip) {
   this.tip = tip;
 }
 
-Pizza.prototype.toppings = function(veg,meat) {
-  let toppingCost = 0;
-  this.toppings.forEach(function() {
-    if ((veg.includes("onion"))||(veg.includes("peppers")) || (veg.includes("pineApple"))) {
-      toppingCost += .50;
-      console.log(toppingCost);
-    }
-    else if ((meat.includes("sausage"))||(meat.includes("pepperoni")) || (meat.includes("chicken"))) {
-      toppingCost += 1;
-      console.log(toppingCost)
-    }
-  
-      return totalCost + toppingCost;
-     
-  })
-}
+
 
 Pizza.prototype.pizzaCost = function() {
   let totalCost = 10;
@@ -32,10 +17,24 @@ Pizza.prototype.pizzaCost = function() {
   } else if (this.size === "medium") {
    totalCost += 4;
    console.log(totalCost)
-  } else if (this.size === "large"){
+  } else{
 totalCost += 6;
 console.log(totalCost)
+  }
+
+
+if (this.toppings == "onion" || this.toppings== "peppers" || this.toppings== "pineApple") {
+totalCost = totalCost += .50;
+console.log(totalCost);
+} else if(this.toppings == "sausage" || this.toppings == "pepperoni" || this.toppings == "chicken") {
+  totalCost = totalCost += 1;
+  console.log(totalCost);
 }
+  totalCost;
+  console.log(totalCost);
+
+
+
 
 if (this.dining === "delivery") {
  totalCost = totalCost += 5;
@@ -46,8 +45,6 @@ if (this.dining === "delivery") {
   console.log(totalCost)
 
 }
-
-console.log(totalCost)
 
 if (this.tip === "5") {
   totalCost = totalCost + (totalCost * .05);
@@ -85,9 +82,9 @@ function handleOrder(event) {
   console.log(diningChosen);
   const tipChosen = document.querySelector("input[name=tip]").value;
   console.log(tipChosen +"%");
-  const toppingsChosen = (document.querySelectorAll("input[name=meat]:checked").value) + (document.querySelectorAll("input[name=veg]:checked").value);
-  console.log(toppingsChosen);
 
+  const toppingsChosen = document.querySelector("input[name=toppings]:checked").value;
+  console.log(toppingsChosen);
   let pizzaOrder = new Pizza(sizeChosen, toppingsChosen, diningChosen, tipChosen);
   console.log(pizzaOrder);
   let cost = pizzaOrder.pizzaCost();
@@ -98,13 +95,19 @@ function handleOrder(event) {
 
 
 function newOrder(event) {
-  document.querySelector("span.summary").removeAttribute("id");
-  document.getElementById("submit").disabled = false;
-  document.getElementById("reset").disabled = false;
+  document.querySelector("div#summary").setAttribute("class", "hidden");
+  document.getElementById("completePizza").disabled = false;
+  document.getElementById("startOver").disabled = false;
+}
+
+function allTops() {
+  document.querySelector("input")
 }
 
 window.addEventListener("load", function() {
   document.querySelector("form#pizzaOrderForm").addEventListener("submit", handleOrder);
-  document.querySelector("button#startOver").addEventListener("click", newOrder);
+  document.getElementById("startOver").addEventListener("click", newOrder);
 
-}) ;
+})
+
+
