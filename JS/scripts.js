@@ -7,6 +7,23 @@ function Pizza(size,toppings,dining, tip) {
   this.tip = tip;
 }
 
+Pizza.prototype.toppings = function(veg,meat) {
+  let toppingCost = 0;
+  this.toppings.forEach(function() {
+    if ((veg.includes("onion"))||(veg.includes("peppers")) || (veg.includes("pineApple"))) {
+      toppingCost += .50;
+      console.log(toppingCost);
+    }
+    else if ((meat.includes("sausage"))||(meat.includes("pepperoni")) || (meat.includes("chicken"))) {
+      toppingCost += 1;
+      console.log(toppingCost)
+    }
+  
+      return totalCost + toppingCost;
+     
+  })
+}
+
 Pizza.prototype.pizzaCost = function() {
   let totalCost = 10;
   if (this.size === "small") {
@@ -19,20 +36,6 @@ Pizza.prototype.pizzaCost = function() {
 totalCost += 6;
 console.log(totalCost)
 }
-console.log(totalCost)
-
-  let toppings = [];
-  toppings.forEach(function() {
-  let toppingsCost  = 0;
-  if ((veg.includes("onion"))||(veg.includes("peppers")) || (veg.includes("pineApple"))) {
-    toppingsCost += .50;
-  }
-  else if ((meat.includes("sausage"))||(veg.includes("pepperoni")) || (veg.includes("chicken"))) {
-    toppingsCost += 1;
-  }
-    return totalCost + toppingsCost;
-   
-})
 
 if (this.dining === "delivery") {
   totalCost += 5;
@@ -44,26 +47,29 @@ if (this.dining === "delivery") {
 
 }
 
-if (this.tip === 5) {
-  totalCost = totalCost += (totalCost * .05);
+console.log(totalCost)
+
+if (this.tip === "5") {
+  totalCost + (totalCost * .05);
   console.log(totalCost)
 
 }
-else if (this.tip === 10) {
-  totalCost = totalCost += (totalCost * .10);
+else if (this.tip === "10") {
+  totalCost += (totalCost * .10);
   console.log(totalCost)
 
 } 
-else if(this.tip === 15){
+else if(this.tip === "15"){
   totalCost = totalCost += (totalCost * .15);
   console.log(totalCost)
 
 } else if (this.tip === 20) {
-  console.log(totalCost)
-  totalCost = totalCost += (totalCost * .20); 
+totalCost += (totalCost * .20); 
+console.log(totalCost)
+
 } else {
-  console.log(totalCost)
   totalCost =+ 0;
+  console.log("no tip added")
 }
 
 return totalCost.toFixed(2);
