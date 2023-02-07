@@ -38,11 +38,11 @@ console.log(totalCost)
 }
 
 if (this.dining === "delivery") {
-  totalCost += 5;
+ totalCost = totalCost += 5;
   console.log(totalCost)
 
 } else if (this.dining === "pickUp") {
-  totalCost += 0;
+  totalCost = totalCost += 0;
   console.log(totalCost)
 
 }
@@ -50,12 +50,12 @@ if (this.dining === "delivery") {
 console.log(totalCost)
 
 if (this.tip === "5") {
-  totalCost + (totalCost * .05);
+  totalCost = totalCost + (totalCost * .05);
   console.log(totalCost)
 
 }
 else if (this.tip === "10") {
-  totalCost += (totalCost * .10);
+ totalCost = totalCost += (totalCost * .10);
   console.log(totalCost)
 
 } 
@@ -63,12 +63,12 @@ else if(this.tip === "15"){
   totalCost = totalCost += (totalCost * .15);
   console.log(totalCost)
 
-} else if (this.tip === 20) {
-totalCost += (totalCost * .20); 
+} else if (this.tip === "20") {
+totalCost = totalCost += (totalCost * .20); 
 console.log(totalCost)
 
 } else {
-  totalCost =+ 0;
+  totalCost = totalCost =+ 0;
   console.log("no tip added")
 }
 
