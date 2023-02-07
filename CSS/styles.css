@@ -1,7 +1,7 @@
 body {
-  text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: white;
+  font-family: "Sugar Snow";
+
 }
 
 .pizzaSizes {
@@ -12,16 +12,17 @@ color:orangered;
 
 }
 
-div#hidden {
+div.hidden {
   display: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  color: white;
   font-size: 30pt;
 }
 
+span {
+  font-size: 30pt;
+  color: black;
+}
 .tip {
   background-color: transparent;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: rgb(94, 155, 123);
   font-size: 30pt;
 }
@@ -32,13 +33,11 @@ button#startOrder {
 }
 
 .diningOption {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: white;
   font-size: 30pt;
 }
 
 .pizzaToppings {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: white;
   font-size: 30pt;
 }
@@ -51,14 +50,14 @@ color: white;
 }
 
 html {
-  background-image:url(/IMG/people1.png);
+  background-color: pink;
   background-size: flex;
 }
 
-input#completePizza {
+button {
 background-color: transparent;
 border-color: transparent;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  color: white;
+  color: rgb(211, 255, 67);
   font-size: 40pt;
 }
