@@ -3,7 +3,7 @@
 <head>
   <link href="/CSS/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="/JS/scripts.js"></script>
-  <title>MysticPizzza</title>
+  <title>Mystic Pizzza</title>
 </head>
 <header>
   <h1>Mystic Pizza</h1>
@@ -25,7 +25,7 @@
     <div id="pizzaToppings">
       <h1>Pizza Toppings</h1>
       <h3>Proteins</h3>
-        <input type="checkbox" name="toppings" id="sausage" value="sausage" />
+        <input type="checkbox" name="toppings" id="sausage" value="sausage"  />
         <label for="sausage">Sausage</label>
         <br />
         <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"/>
@@ -53,8 +53,9 @@
     </div>
     <div id="tip">
       <h1>Tip the staff:</h1>
-        <input type="range" id="tip" name="tip" min="0" step="5" max="20"  />
-        <label for="tip">Tip</label>
+        <input type="range" id="tip" name="tip" min="0" step="5" max="20" value="15"  oninput="this.nextElementSibling.value =  this.value" />
+<output>15</output>
+        <label for="tip">% Tip</label>
   </input>
     </div>
       <button type="submit" id="completePizza">Place Order</button>
