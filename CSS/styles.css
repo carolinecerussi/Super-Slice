@@ -1,63 +1,53 @@
 body {
-  color: white;
-  font-family: "Sugar Snow";
-
+  color: rgb(69, 93, 226);
+  font-family: "Space Time";
+  margin: 5%;
 }
 
-.pizzaSizes {
-background-color: transparent;
-border-color: transparent;
-font-size: 30pt;
-color:orangered;
 
-}
+
 
 div.hidden {
   display: none;
-  font-size: 30pt;
+  font-size: 20pt;
 }
 
 span {
   font-size: 30pt;
-  color: black;
+  color: rgb(0, 0, 0);
 }
-.tip {
-  background-color: transparent;
-  color: rgb(94, 155, 123);
-  font-size: 30pt;
-}
-
 button#startOrder {
   background-color: transparent;
   border-color: transparent;
+  font-family: "Space Time";
+
 }
 
-.diningOption {
-  color: white;
-  font-size: 30pt;
-}
 
 .pizzaToppings {
   color: white;
   font-size: 30pt;
 }
 
+
+
 header {
-  font-family: "Sugar Snow";
   text-align: center;
 font-size: 40pt;
-color: white;
+color: rgb(34, 17, 168);
 }
 
 html {
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
   background-size: flex;
 }
 
 button {
 background-color: transparent;
 border-color: transparent;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  color: rgb(211, 255, 67);
+  color: rgb(220, 177, 34);
   font-size: 40pt;
+  font-family: "Space Time";
+  text-align: center;
+
 }

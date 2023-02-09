@@ -89,7 +89,7 @@ function handleOrder(event) {
   console.log(pizzaOrder);
   let cost = pizzaOrder.pizzaCost();
   document.querySelector("div#summary").removeAttribute("class", "hidden");
-  document.querySelector("span#summary").innerText = ("$" + cost);
+  document.querySelector("span#summary").innerText = ("Size:" + sizeChosen + ", Toppings:" + toppingsChosen + ", Pick up or Delivery: " + diningChosen + "Tip Amount: " + tipChosen + "%, Order Total: $" + cost);
   document.getElementById("completePizza").disabled = true;
 };
 
