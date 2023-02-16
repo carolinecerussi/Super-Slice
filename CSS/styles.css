@@ -1,30 +1,40 @@
+
+
 body {
-  color: rgb(255, 255, 255);
   font-family: "Space Time";
   text-align: center;
-  font-size: 180%;
-  line-height: 40pt;
-  background-size: cover;
-  background-image: url(/IMG/random1-1.png);rgba(244, 242, 224, 0.734);
-  margin:5%;
-  
+  line-height: 30pt;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+
+}
+div#summary{
+  text-align: center;
+  margin-top: 5%;
+  color:red;
+  background-color: rgba(255, 255, 255, 0.775);
+  border-radius: 50pt;
+  color: black;
+  font-size: 25pt;
+  line-height: 35pt;
 }
 
+header{
+  font-size: 40pt;
+  color: violet;
+}
+h2{
+  font-size: 25pt;
+}
 
 div.hidden {
   display: none;
-  font-size: 20pt;
+  font-size: 25pt;
   text-align: center;
   background-color: white;
 }
 
-span {
-  font-size: 25pt;
-  color: rgb(0, 0, 0);
-  text-align: center;
-line-height: 35pt;
-
-};
 
 button#startOrder {
   background-color: transparent;
@@ -38,18 +48,14 @@ form{
   background-color: rgba(255, 255, 255, 0.775);
   border-radius: 50pt;
   color: black;
+  font-size: 25pt;
 }
 
 
 
-header{
-text-align: center;
-font-size: 40pt;
-color: rgb(0, 0, 0);
-};
-
 html {
-  background-color: white;
+  background-size: cover;
+  background-image: url(/IMG/random1-1.png);rgba(244, 242, 224, 0.734);
 }
 
 button {

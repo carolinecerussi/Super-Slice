@@ -11,9 +11,10 @@
 </header>  
 <body>
   <div class="container">
-  <button id="startOrder"><img src="/IMG/Pizza-Slice.png" alt="pizza slice" width="80px" ></button>  
+  <button type="submit" id="start">START</button>  
   <form id="pizzaOrderForm">
     <div id="pizzaSize">
+      <br>
       <h1>Pie Size</h1> 
       <input type="radio" id="small" name="size" value="small" checked />
       <label for="Small">Small</label>
@@ -60,12 +61,13 @@
     </div>
       <button type="submit" id="completePizza">Place Order</button>
   </form>
-
   <div class="hidden" id="summary">
-    <button type="submit" id="startOver">Edit Order</button>
 <br />
   <span name="summary" id="summary">
   </span>
+  <br>
+  <button type="submit" id="startOver">Edit Order</button>
+
 </div>
 </div>
 </body>

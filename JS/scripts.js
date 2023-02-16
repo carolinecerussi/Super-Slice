@@ -77,19 +77,17 @@ return totalCost.toFixed(2);
 function handleOrder(event) {
   event.preventDefault();
   const sizeChosen = document.querySelector("input[name=size]:checked").value;  
-  console.log(sizeChosen);
   const diningChosen = document.querySelector("input[name=dining]:checked").value;
   console.log(diningChosen);
   const tipChosen = document.querySelector("input[name=tip]").value;
   console.log(tipChosen +"%");
-
   const toppingsChosen = document.querySelector("input[name=toppings]:checked").value;
   console.log(toppingsChosen);
   let pizzaOrder = new Pizza(sizeChosen, toppingsChosen, diningChosen, tipChosen);
   console.log(pizzaOrder);
   let cost = pizzaOrder.pizzaCost();
   document.querySelector("div#summary").removeAttribute("class", "hidden");
-  document.querySelector("span#summary").innerText = ("Size:" + sizeChosen + ", Toppings:" + toppingsChosen + ", Pick up or Delivery: " + diningChosen + "Tip Amount: " + tipChosen + "%, Order Total: $" + cost);
+  document.querySelector("span#summary").innerText = ("Size:" + sizeChosen + " Toppings:" + toppingsChosen + " Pick up or Delivery: " + diningChosen + "Tip Amount: " + tipChosen + "%, Order Total: $" + cost);
   document.getElementById("completePizza").disabled = true;
 };
 
