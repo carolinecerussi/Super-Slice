@@ -98,12 +98,23 @@ function newOrder(event) {
   document.getElementById("startOver").disabled = false;
 }
 
-function allTops() {
-  document.querySelector("input")
-}
+// function showTops() {
+//   let toppings = 
+//   document.querySelector("div#pizzaToppings").value;
+//   console.log(toppings);
+//   if(toppings[checked] = true)
+//  return toppings;
+// else {
+//   toppings= "0";
+//   console.log(toppings);
+// }
+
+// }
 
 window.addEventListener("load", function() {
   document.querySelector("form#pizzaOrderForm").addEventListener("submit", handleOrder);
+  document.querySelector("div[id=pizzaToppings]:checked").value;
+
   document.getElementById("startOver").addEventListener("click", newOrder);
 
 })
