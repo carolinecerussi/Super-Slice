@@ -1,53 +1,64 @@
 body {
-  color: rgb(69, 93, 226);
+  color: rgb(255, 255, 255);
   font-family: "Space Time";
-  margin: 5%;
+  text-align: center;
+  font-size: 180%;
+  line-height: 40pt;
+  background-size: cover;
+  background-image: url(/IMG/random1-1.png);rgba(244, 242, 224, 0.734);
+  margin:5%;
+  
 }
-
-
 
 
 div.hidden {
   display: none;
   font-size: 20pt;
+  text-align: center;
+  background-color: white;
 }
 
 span {
-  font-size: 30pt;
+  font-size: 25pt;
   color: rgb(0, 0, 0);
-}
+  text-align: center;
+line-height: 35pt;
+
+};
+
 button#startOrder {
   background-color: transparent;
   border-color: transparent;
   font-family: "Space Time";
+  color: red;
 
 }
 
-
-.pizzaToppings {
-  color: white;
-  font-size: 30pt;
+form{
+  background-color: rgba(255, 255, 255, 0.775);
+  border-radius: 50pt;
+  color: black;
 }
 
 
 
-header {
-  text-align: center;
+header{
+text-align: center;
 font-size: 40pt;
-color: rgb(34, 17, 168);
-}
+color: rgb(0, 0, 0);
+};
 
 html {
-  background-color: rgb(255, 255, 255);
-  background-size: flex;
+  background-color: white;
 }
 
 button {
 background-color: transparent;
+margin: 5%;
 border-color: transparent;
-  color: rgb(220, 177, 34);
-  font-size: 40pt;
+  color: rgb(124, 55, 227);
+  font-size: 30pt;
   font-family: "Space Time";
   text-align: center;
 
-}
+};
