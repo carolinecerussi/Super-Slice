@@ -2,48 +2,40 @@
 
 body {
   font-family: "Space Time";
-  text-align: center;
   line-height: 30pt;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
+  width: 100%;
 
 }
 div#summary{
   text-align: center;
   margin-top: 5%;
-  color:red;
   background-color: rgba(255, 255, 255, 0.775);
   border-radius: 50pt;
   color: black;
-  font-size: 25pt;
+  font-size: 20pt;
   line-height: 35pt;
 }
 
 header a{
-  font-size: 40pt;
-  color: rgb(255, 86, 35);
-  ;
+width: 100%;
+  color: rgb(255, 255, 255);
+text-align: center  ;
 }
-h2{
-  font-size: 25pt;
+header h1{
+  font-size: 50pt;
 }
 
 div.hidden {
   display: none;
   font-size: 25pt;
-  text-align: center;
+  text-align: left;
   background-color: white;
 }
 
 
-button#startOrder {
-  background-color: transparent;
-  border-color: transparent;
-  font-family: "Space Time";
-  color: red;
-
-}
 
 form{
   background-color: rgba(255, 255, 255, 0.775);
@@ -56,14 +48,14 @@ form{
 
 html {
   background-size: cover;
-  background-image: url(/IMG/random1-1.png);rgba(244, 242, 224, 0.734);
+  background-image: url();
 }
 
 button {
-background-color: transparent;
+background-color: black;
 margin: 5%;
 border-color: transparent;
-  color: rgb(124, 55, 227);
+  color: rgb(255, 255, 255);
   font-size: 30pt;
   font-family: "Space Time";
   text-align: center;

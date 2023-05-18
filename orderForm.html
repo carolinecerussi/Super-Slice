@@ -13,6 +13,16 @@
 <body>
   <div class="container">
   <form id="pizzaOrderForm">
+    <div id="customerInfo">
+    <h1>Customer</h1>
+    <h2>Name</h2>
+    <input type="text" placeholder="First" required />
+    <br>
+    <input type="text" placeholder="Last" required />
+    <br>
+    <h2>Phone</h2>
+    <input type="tel" placeholder="(xxx) xxx-xxxx" required />
+    </div>
     <div id="pizzaSize">
       <br>
       <h1>Pie Size</h1> 
@@ -25,6 +35,9 @@
     </div>
     <div class="pizzaToppings">
       <h1>Pizza Toppings</h1>
+      <input type="checkbox" name="toppings" id="none" value="none" checked />
+      <label for="none">No Toppings</label>
+      <br />
       <h3>Proteins</h3>
         <input type="checkbox" name="toppings" id="sausage" value="sausage"  />
         <label for="sausage">Sausage</label>
