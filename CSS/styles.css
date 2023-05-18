@@ -20,9 +20,10 @@ div#summary{
   line-height: 35pt;
 }
 
-header{
+header a{
   font-size: 40pt;
-  color: violet;
+  color: rgb(255, 86, 35);
+  ;
 }
 h2{
   font-size: 25pt;

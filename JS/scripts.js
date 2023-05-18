@@ -7,8 +7,6 @@ function Pizza(size,toppings,dining, tip) {
   this.tip = tip;
 }
 
-
-
 Pizza.prototype.pizzaCost = function() {
   let totalCost = 10;
   if (this.size === "small") {
@@ -22,17 +20,36 @@ totalCost += 6;
 console.log(totalCost)
   }
 
+//  function checkedToppings() {
+//   checkedToppings = checkedArray;
+//   var toppingsChecked = document.getElementsByName("toppings");
+//   console.log(toppingsChecked);    
+//   checkedArray = array.forEach(toppingsChecked => {
+//   if (toppingsChecked.checked == true) {
+// console.log(checkedArray);
+//   } else  {
+//     console.log("no toppings chosen")
+//   }
+// })
+//   }
+ 
 
-if (this.toppings == "onion" || this.toppings== "peppers" || this.toppings== "pineApple") {
+
+
+if (this.toppings == "onion" || this.toppings == "peppers" || this.toppings == "pineApple") {
 totalCost = totalCost += .50;
 console.log(totalCost);
 } else if(this.toppings == "sausage" || this.toppings == "pepperoni" || this.toppings == "chicken") {
   totalCost = totalCost += 1;
   console.log(totalCost);
+} else {
+  totalCost = totalCost + 0;
+  console.log(totalCost);
 }
+
+
   totalCost;
   console.log(totalCost);
-
 
 
 
@@ -65,7 +82,7 @@ totalCost = totalCost += (totalCost * .20);
 console.log(totalCost)
 
 } else {
-  totalCost = totalCost =+ 0;
+  totalCost === (totalCost =+ 0);
   console.log("no tip added")
 }
 
@@ -87,12 +104,13 @@ function handleOrder(event) {
   console.log(pizzaOrder);
   let cost = pizzaOrder.pizzaCost();
   document.querySelector("div#summary").removeAttribute("class", "hidden");
-  document.querySelector("span#summary").innerText = ("Size:" + sizeChosen + " Toppings:" + toppingsChosen + " Pick up or Delivery: " + diningChosen + "Tip Amount: " + tipChosen + "%, Order Total: $" + cost);
+  document.querySelector("span#summary").innerText = ("Size: " + sizeChosen + "  Toppings: " + toppingsChosen + "   Pick up or Delivery:  " + diningChosen + "   Tip Amount: " + tipChosen + "%" +  "    Order Total: $" + cost);
   document.getElementById("completePizza").disabled = true;
 };
 
 
 function newOrder(event) {
+  // document.event.preventDefault();
   document.querySelector("div#summary").setAttribute("class", "hidden");
   document.getElementById("completePizza").disabled = false;
   document.getElementById("startOver").disabled = false;
@@ -100,21 +118,19 @@ function newOrder(event) {
 
 // function showTops() {
 //   let toppings = 
-//   document.querySelector("div#pizzaToppings").value;
+//   document.getElementsByClassName("[pizzaToppings]:checked");
 //   console.log(toppings);
-//   if(toppings[checked] = true)
-//  return toppings;
+//   if(toppings.checked = true) {
+//  console.log(toppings);
+//   }
 // else {
 //   toppings= "0";
-//   console.log(toppings);
+//   console.log(showTops(toppings));
 // }
-
 // }
 
 window.addEventListener("load", function() {
   document.querySelector("form#pizzaOrderForm").addEventListener("submit", handleOrder);
-  document.querySelector("div[id=pizzaToppings]:checked").value;
-
   document.getElementById("startOver").addEventListener("click", newOrder);
 
 })
