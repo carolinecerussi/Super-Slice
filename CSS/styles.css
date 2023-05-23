@@ -2,9 +2,6 @@
 
 body {
   font-family: "coffecake"; 
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
   width: 100%;
   text-align: center;
 
@@ -16,52 +13,51 @@ div h1{
 }
 div#summary{
   text-align: center;
-  margin-top: 5%;
-  background-color: rgba(232, 58, 0, 0.775);
+  border-width: 2px;
   border-radius: 50pt;
   color: black;
   font-size: 20pt;
-  line-height: 35pt;
+}
+
+
+header {
+  background-color: white;
 }
 
 header a{
-width: 100%;
 font-family: "coffecake"; 
   color: rgba(232, 58, 0, 0.775);
 text-align: center  ;
 text-decoration: solid;
 }
+
 header h1{
   font-size: 70pt;
+  width: 100%;
 }
 
-div.hidden {
-  display: none;
-  font-size: 25pt;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.681);
-  color: rgb(255, 255, 255);
-}
 
 img {
   border-radius: 200pt;
 }
 
 form{
-  background-color: rgba(255, 255, 255, 0.687);
-  border-radius: 5pt;
+  border-radius: 25pt;
   color: black;
-  font-size: 25pt;
-  margin: 15pt;
-  padding: 5%;
-  text-align: left;
+  font-size: 18pt;
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  padding: 5pt;
 }
 
 input {
-  border-color: transparent;
+  border-color: black;
+  border-radius: 10pt;
+  padding:10pt;
+  margin-bottom: 3pt;
   font-size: 18pt;
   background-color: transparent;
-  text-decoration: underline;
   color: black;
   font-family: "coffecake"; 
 
@@ -69,8 +65,10 @@ input {
 
 
 
-html {
-  background-size: cover;
+
+
+body {
+  background-color: rgba(249, 209, 209, 0.569);
 }
 
 button {
@@ -86,9 +84,3 @@ background-color: transparent
   text-align: center;
  }
 
- .container {
-  border-radius: 2pt;
-  border-width: 2pt;
-  border-color: black;
-
- }

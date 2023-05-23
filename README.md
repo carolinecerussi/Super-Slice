@@ -24,7 +24,7 @@ On the opened html browser, you will see a description and photo of the pizza re
 ## Setup/Installation Requirements
 
 * Clone this repository onto your desktop
-* Open repository folder named "PIZZA"
+* Open repository folder named "pizza"
 * Open index.html file in browser
 
 ## Known Bugs
