@@ -2,9 +2,7 @@
 
 body {
   font-family: "coffecake"; 
-  width: 100%;
   text-align: center;
-
 }
 
 div h1{
@@ -64,12 +62,6 @@ input {
 }
 
 
-
-
-
-body {
-  background-color: rgba(249, 209, 209, 0.569);
-}
 
 button {
 margin: 5%;
