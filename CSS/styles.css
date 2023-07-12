@@ -1,86 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300&family=Bagel+Fat+One&family=Barlow:wght@200&family=Belanosima&family=Bungee+Hairline&family=Caprasimo&family=Codystar:wght@300;400&family=Coiny&family=Londrina+Outline&family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+img.front{
+  border-radius: 50%;
+  margin-left: 3%;
+  border: 2px black dotted;
+
+}
+img.front:hover {
+  border-radius: 50%;
+  margin-left: 3%;
+scale:1.5;
+}
+
+img.smile {
+  padding-left:2%;
+  padding-right: 1%;
+}
+
+header {
+  background-color: rgb(248, 198, 0);
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+
+.text-container {
+  width: 100%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container h1{
+  margin: 0;
+  font-size:80pt;
+  color: rgba(0, 0, 0, 0.01);
+  background-image: url("../IMG/brick2.png");
+  background-size: contain;
+  -webkit-background-clip:text;
+  animation: animate 60s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-flexbox;
+  justify-content: center;
+}
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+
 
 
 body {
-  font-family: "coffecake"; 
   text-align: center;
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
 }
 
-div h1{
-  color: rgba(136, 157, 87, 0.866);
-
+p {
+  font-family: 'Barlow';
+  font-size: 20pt;
+  line-height: 30pt;
+  padding-top: 5%;
+  color:black;
 }
+
 div#summary{
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   color: black;
-  font-size: 25pt;
-  font-family: "arial"; 
+  font-size: 20pt;
+  font-family: "Barlow"; 
+  line-height: 23pt;
 
+}
+header a {
+  font-family: "Bagel Fat One";
+text-decoration: none;
+  background-color: transparent(255, 255, 255, 0.884);
+  
 }
 
 
-header h1{
-  background-color:transparent;
-  font-size: 80pt;
+header h2{
+  font-family: "Bagel Fat One";
+  color: rgba(6, 6, 6, 0.716);
+text-decoration: solid;
+font-size: 18pt;
+line-height: 23pt;
 }
 
-header a{
-font-family: "coffecake"; 
-  color: rgb(248, 132, 93);
-text-decoration: solid
-
+label {
+font-size: 15pt;
 }
 
 
-img {
-  border-radius: 50%;
-
+ button:hover{
+  font-size: 21pt;
+  color:rgb(255, 60, 0);
 }
+
+
+
+
 
 form{
-  border-radius: 15pt;
   color: black;
-  font-size: 15pt;
-  background-color: rgba(255, 255, 255, 0.759);
-  padding: 5pt;
-  text-align: center;
-  width: 50%;
-  margin-left: 25%;
+  text-align: left;
+  font-family: "Barlow"; 
+background-color: transparent;
+justify-content: center;
+display: inline-block;
+width: 100%;
+font-size: 15pt;
+line-height: 15pt;
+padding-top: 5%;
+padding-bottom: 5%;
+padding-left: 10%;
+
+background-color: rgba(0, 0, 0, 0.189);
 }
 
 
 
 input {
-  border-color: rgb(107, 138, 61);
+  border-color: rgb(0, 0, 0);
   border-radius: 10pt;
-  padding:10pt;
-  margin-bottom: 3pt;
-  font-size: 15pt;
+  padding:5pt;
+  margin-bottom: 5pt;
+  font-size: 13pt;
   background-color: transparent;
   color: black;
-  font-family: "arial"; 
+  font-family: "Barlow"; 
 
+}
+
+div.headerStyle {
+  width: 100%;
+display: inline-block;
 }
 
 
 
 button {
-margin: 5%;
-border-color: transparent;
-  color: rgba(243, 105, 66, 0.775);
-  font-size: 30pt;
-  font-family: "coffecake";
-background-color: transparent
-};
+  margin: 5%;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.784);
+    font-size: 20pt;
+    font-family: "Barlow"; 
+    background-color: transparent;
+    
+}
+
+
+
 
  p {
   text-align: center;
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
  }
 
 
  html {
-  background-color: rgb(230, 230, 230);
-  background-image: url(/IMG/random1-1.png);
-  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.557);
+  width: 100vw;
+  height:100vw
  }

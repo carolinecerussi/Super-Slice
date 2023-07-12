@@ -6,29 +6,29 @@
   <script src="/JS/scripts.js"></script>
   <title>Order Form</title>
 </head>
-
 <header>
-  <a href="/index.html"><h1>Super Slice </h1>
-  <h2>Brooklyn NY</h2>
-</a>
+  <div class="headerStyle">
+    <a href="/index.html">
+  <div class="text-container">
+  <h1>Super<img class="smile" src="/IMG/smile2.png"  alt="smiley" width="120pt"  />   Slice</h1>    </a>
+<h2>Brooklyn, NY <br/>Since 1973</h2></div>
 </header>
-
 <body>
   <div class="container">
   <form id="pizzaOrderForm">
     <div id="customerInfo">
-    <h1>Customer</h1>
-    <h2>Name</h2>
+    <h2>Customer Info:</h2>
+    <h3>Name</h3>
     <input type="text" placeholder="First" required />
     <br>
     <input type="text" placeholder="Last" required />
     <br>
-    <h2>Phone</h2>
+    <h3>Phone:</h3>
     <input type="tel" placeholder="(xxx) xxx-xxxx" required />
     </div>
     <div id="pizzaSize">
       <br>
-      <h1>Pie Size</h1> 
+      <h2>Pie Size:</h2> 
       <input type="radio" id="small" name="size" value="small" checked />
       <label for="Small">Small</label>
       <input type="radio" id="medium" name="size" value="medium" />
@@ -37,7 +37,7 @@
       <label for="large">Large</label>
     </div>
     <div class="pizzaToppings">
-      <h1>Pizza Toppings</h1>
+      <h2>Pizza Toppings:</h2>
       <input type="checkbox" name="toppings" id="none" value="none" checked />
       <label for="none">No Toppings</label>
       <h3>Proteins</h3>
@@ -62,28 +62,29 @@
         <br />
     </div>
     <div id="dining">
-      <h1>Here? or To Go?</h1>
+      <h2>Here? or To Go?</h2>
       <input type="radio" name="dining" id="pickUp" value="pickUp" checked />
       <label for="pickUp">Pick Up</label>
      <input type="radio" name="dining" id="delivery" value="delivery" />
      <label for="delivery">Delivery</label>
     </div>
     <div id="tip">
-      <h1>Tip the staff:</h1>
+      <h2>Tip the staff:</h2>
         <input type="range" id="tip" name="tip" min="0" step="5" max="20" value="15"  oninput="this.nextElementSibling.value =  this.value" />
 <output>15</output>
         <label for="tip">% Tip</label>
   </input>
     </div>
  <button type="submit" id="completePizza">Enter</button>
-  </form>
-<br />
-<div class="hidden" id="summary">
-    <span name="summary" id="summary">
-    </span>
+ <div class="hidden" id="summary">
+  <span name="summary" id="summary">
+  </span>
 <button type="submit" id="startOver">Edit</button>
 <a href="/thankYou.html"><button type="button" id="completePizza">Order</button></a>
-</div>
+</div> 
+</form>
+  <br />
+
   <br>
 </div>
 </div>
